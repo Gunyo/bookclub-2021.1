@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.6'
@@ -38,7 +38,6 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
@@ -58,3 +57,11 @@ gem "devise", "~> 4.8"
 gem "rolify", "~> 6.0"
 
 gem "pundit", "~> 2.1"
+
+gem "cloudinary", "~> 1.20"
+
+gem "activestorage-cloudinary-service", "~> 0.2.3"
+
+gem "dotenv-rails", "~> 2.7"
+
+gem "spring", "~> 2.1"
